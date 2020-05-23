@@ -1,4 +1,6 @@
-n = int(raw_input())
-width = len("{0:b}".format(n))
-for i in xrange(1,n+1):
-  print "{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width)
+n=25
+db=len(bin(n)[2:])
+print(db)
+st="{0:"+str(db)+"d} {1:"+str(db)+"o} {2:"+str(db)+"X} {3:"+str(db)+"b}"
+for i in range(1,n+1):
+  print(st.format(i,i,i,i))
